@@ -1,0 +1,309 @@
+// uncomment to use pico css
+// @import '@picocss/pico/css/pico.css';
+
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.App {
+    text-align: center;
+    margin: auto;
+    color: black;
+    background-color: #E5E7EA;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    overflow: auto;
+}
+
+.BadgesSection {
+    .Badge {
+        padding: 6px 16px;
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    .pill {
+        border-radius: 12px;
+    }
+    
+    .square {
+        border-radius: 4px;
+    }
+    
+    .gray {
+        background-color: #F3F4F6;
+        color: #1F2937;
+    }
+    
+    .red {
+        background-color: #FEE2E2;
+        color: #991B1B;
+    }
+    
+    .yellow {
+        background-color: #FEF3C7;
+        color: #92400E;
+    }
+    
+    .green {
+        background-color: #D1FAE5;
+        color: #065F46;
+    }
+    
+    .blue {
+        background-color: #DBEAFE;
+        color: #1E40AF;
+    }
+    
+    .indigo {
+        background-color: #E0E7FF;
+        color: #3730A3;
+    }
+    
+    .purple {
+        background-color: #EDE9FE;
+        color: #5B21B6;
+    }
+    
+    .pink {
+        background-color: #FCE7F3;
+        color: #9D174D;
+    }
+    
+}
+
+.BannersSection {
+    margin: 0 auto;
+    display: inline-block;
+
+    .Banner {
+        border-radius: 6px;
+        padding: 16px;
+        width: 800px;
+        margin: 20px;
+        text-align: start;
+
+        .heading {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 15px;
+            }
+        }
+
+        .content {
+            margin-top: 0.5rem;
+            margin-left: 36px;
+        }
+    }
+
+    .success {
+        background-color: #ECFDF5;
+        color: #047857;
+
+        svg {
+            color: #34D399;
+        }
+    }
+
+    .warning {
+        background-color: #FFFBEB;
+        color: #B45309;
+
+        svg {
+            color: #FBBF24;
+        }
+    }
+
+    .error {
+        background-color: #FEF2F2;
+        color: #B45309;
+
+        svg {
+            color: #F87171;
+        }
+    }
+
+    .neutral {
+        background-color: #EFF6FF;
+        color: #1C51B9;
+
+        svg {
+            color: #60A5FA;
+        }
+    }
+}
+
+.CardsSection {
+    margin-bottom: 50px;
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Card {
+        width: 385px;
+        margin: 0 25px;
+        
+
+        .icon {
+            height: 48px;
+            width: 48px;
+            background-color: #3F75FE;
+            color: white;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+            top: 24px;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+            }
+        }
+
+        .content {
+            background-color: #F9FAFB;
+            padding: 32px 24px;
+            border-radius: 8px;
+
+            &:hover {
+                box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+            }
+
+            .title {
+                color: #111827;
+                font-weight: 500;
+                line-height: 28px;
+                margin-bottom: 20px;
+                margin-top: 32px;
+                font-size: 18px;
+            }
+
+            .text {
+                color: #6B7280;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }        
+    }
+}
+
+.TestimonialsSection {
+    margin-bottom: 50px;
+
+    .testimonials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Testimonial {
+        margin: 50px;
+        width: 1400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content-with-photo {
+            width: 100%;
+            height: 400px;
+            margin: 96px 0;
+            background-color: #2545B8;
+            padding: 72px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-container {
+                width: 850px;
+                height: 464px;
+                overflow: hidden;
+                border-radius: 12px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .text {
+                margin-left: 32px;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                text-align: start;
+
+                svg {
+                    // margin-bottom: 30px;
+                }
+
+                .quote {
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    margin: 24px 0;
+                }
+
+                .name {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .content-no-photo {
+            width: 100%;
+            height: 400px;
+            margin: 96px 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            padding: 96px 71px 112px 71px;
+
+            .quote {
+                width: 768px;
+                margin: 40px 0 32px 0;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 36px;
+            }
+
+            .author {
+                display: flex;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                align-items: center;
+
+                .role {
+                    color: #6B7280;
+                }
+            }
+        }
+    }
+}
