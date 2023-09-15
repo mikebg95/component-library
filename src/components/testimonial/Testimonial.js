@@ -1,5 +1,4 @@
 import React from 'react'
-import photo from "../../img/woman.jpeg"
 import { ReactComponent as QuoteIcon } from "../../img/icons/quote.svg"
 import logo from "../../img/workcation-logo.svg"
 import { ReactComponent as DividerIcon } from "../../img/icons/divider.svg"
@@ -12,7 +11,7 @@ const Testimonial = ({ text, name, role, photo }) => {
 
         {photo && <div className="content-with-photo">
           <div className="img-container">
-            <img src={photo} />
+            <img src={photo} alt="" />
           </div>
           <div className="text">
             <QuoteIcon />
@@ -32,7 +31,7 @@ const Testimonial = ({ text, name, role, photo }) => {
       
       <div className="Testimonial">
         {!photo && <div className="content-no-photo">
-          <img src={logo} />
+          <img src={logo} alt="" />
           <div className="quote">
             {text}
           </div>
