@@ -29,6 +29,9 @@ const Banner = ({ type, title, text }) => {
       icon = < NeutralIcon />
       headerText = title ? title : "Update available"
       break
+    default:
+      icon = < NeutralIcon />
+      headerText = title ? title : "Update available"
   }
 
   // const icon = < IoIosCheckmarkCircle />
